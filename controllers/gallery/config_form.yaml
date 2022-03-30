@@ -1,0 +1,30 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Gallery
+
+# Model Form Field configuration
+form: $/yamobile/gallery/models/gallerymodels/fields.yaml
+
+# Model Class name
+modelClass: Yamobile\Gallery\Models\GalleryModels
+
+# Default redirect location
+defaultRedirect: yamobile/gallery/gallery
+
+# Create page
+create:
+    title: 'yamobile.gallery::lang.page_title.create'
+    redirect: yamobile/gallery/gallery/update/:id
+    redirectClose: yamobile/gallery/gallery
+    flashSave: 'yamobile.gallery::lang.messages.save'
+
+# Update page
+update:
+    title: 'yamobile.gallery::lang.page_title.edit'
+    redirect: yamobile/gallery/gallery
+    redirectClose: yamobile/gallery/gallery
+    flashSave: 'yamobile.gallery::lang.messages.save'
+    flashDelete: 'yamobile.gallery::lang.messages.remove'

@@ -1,0 +1,8 @@
+{
+    "name": "yamobile/gallery-plugin",
+    "type": "october-plugin",
+    "description": "Plugin for generating gallery folders with photos",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
