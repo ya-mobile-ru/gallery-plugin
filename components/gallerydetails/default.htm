@@ -9,7 +9,7 @@
       {% for image in gallerySorting %}
          {% if loop.index0 >= _this.first_image and loop.index0 < _this.last_image %}
             {% set imageTitle = image.title ? image.title : image.description %}
-            <a class="gallery-list-item gallery-list-grid-{{ _this.grid }}" href="{{ image.path }}"
+            <a class="gallery-list-item gallery-list-grid-{{ _this.grid }}" href="{{ image.path | resize(1280,null) }}"
                title="{{ imageTitle }}"
                data-gbox="gallery"
                data-caption="{{ image.title ? image.title ~ (image.description ? ' ' : '') ~ image.description : image.description }}"
