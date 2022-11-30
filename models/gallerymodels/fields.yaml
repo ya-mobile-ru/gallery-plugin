@@ -21,6 +21,7 @@ tabs:
             thumbOptions:
                 mode: crop
                 extension: auto
+            maxFilesize: '10'
             span: full
             type: fileupload
             tab: 'yamobile.gallery::lang.models.fields.tab1'
