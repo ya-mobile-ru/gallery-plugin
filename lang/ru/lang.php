@@ -12,6 +12,10 @@ return [
 		]
 	],
 
+    'permissions' => [
+        'galleries' => 'Управление записями в галерее',
+    ],
+
    'models' => [
       'fields' => [
          'name'          => 'Название папки',
