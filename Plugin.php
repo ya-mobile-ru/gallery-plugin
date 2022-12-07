@@ -46,7 +46,7 @@ class Plugin extends PluginBase {
                'label'       => 'yamobile.gallery::lang.plugin.menu.name',
                'url'         => Backend::url('yamobile/gallery/Gallery'),
                'icon'        => 'icon-image',
-               'permissions' => ['yamobile.gallery.*'],
+               'permissions' => ['yamobile.gallery.access_galleries'],
                'order'       => 500,
          ],
       ];
