@@ -29,4 +29,5 @@ class Gallery extends Controller
         return $this->asExtension('FormController')->update($recordId);
    }
 
+   public $requiredPermissions = ['yamobile.gallery.access_galleries'];
 }
