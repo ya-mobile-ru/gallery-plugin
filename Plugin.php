@@ -26,7 +26,19 @@ class Plugin extends PluginBase {
       ];
    }
 
-   public function registerPermissions() {}
+   public function registerPermissions() {
+    return [
+        'yamobile.gallery.access_galleries' => [
+            'label' => 'yamobile.gallery::lang.permissions.galleries',
+            'tab' => 'Gallery',
+            'order' => 200,
+            'roles' => [
+                'developer',
+                'publisher',
+            ],
+        ],
+    ];
+   }
 
    public function registerNavigation() {
       return [
@@ -34,7 +46,7 @@ class Plugin extends PluginBase {
                'label'       => 'yamobile.gallery::lang.plugin.menu.name',
                'url'         => Backend::url('yamobile/gallery/Gallery'),
                'icon'        => 'icon-image',
-               'permissions' => ['yamobile.gallery.*'],
+               'permissions' => ['yamobile.gallery.access_galleries'],
                'order'       => 500,
          ],
       ];

@@ -12,6 +12,10 @@ return [
 		]
 	],
 
+    'permissions' => [
+        'galleries' => 'Manage gallery records',
+    ],
+
    'models' => [
       'fields' => [
          'name'      => 'Folder name',
