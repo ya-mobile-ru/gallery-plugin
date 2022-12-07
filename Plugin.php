@@ -26,7 +26,19 @@ class Plugin extends PluginBase {
       ];
    }
 
-   public function registerPermissions() {}
+   public function registerPermissions() {
+    return [
+        'yamobile.gallery.access_galleries' => [
+            'label' => 'yamobile.gallery::lang.permissions.galleries',
+            'tab' => 'Gallery',
+            'order' => 200,
+            'roles' => [
+                'developer',
+                'publisher',
+            ],
+        ],
+    ];
+   }
 
    public function registerNavigation() {
       return [
