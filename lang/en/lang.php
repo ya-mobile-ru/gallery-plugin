@@ -35,6 +35,8 @@ return [
             'btn_form' => 'Text on the button that opens the form',
             'tab1' => 'Ggallery',
             'tab2' => 'Ggallery Settings',
+            'heading' => 'Form heading',
+            'description' => 'Form description',
         ],
 
         'columns' => [
