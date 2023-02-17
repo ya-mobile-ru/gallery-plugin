@@ -449,6 +449,9 @@
 				if (!obj.opts.price) {
 					obj.opts.price = ""
 				};
+                if (!obj.opts.heading || obj.opts.heading == "") {
+					obj.opts.heading = "Затрудняетесь с выбором?"
+				};
 				// Check if url contains "filter" used to filter the content. Example: "ajax.html #something"
 				if (obj.type === "ajax") {
 					srcParts = src.split(/\s+/, 2);
@@ -1116,11 +1119,9 @@
 				};
 				slide.$forms = $(`
 					<form ${self.opts.formAttr.join(' ')} id="gbox-modal${slide.index}">${self.opts.formDoneFailHTML}
-						<div class="gbox-content__form-title">${slide.opts.form}</div>
-						<div class="gbox-content__form-sub-title">${self.opts.formSubTitle}</div>
+						<div class="gbox-content__form-title">${slide.opts.heading}</div>
+						<div class="gbox-content__form-sub-title">Укажите контактный номер для консультации и мы Вам перезвоним</div>
 						<div class="gbox-content__form-price">${slide.opts.price}</div>
-						<div class="gbox-content__form-title-v2">${self.opts.formTitleBottom}</div>
-						<div class="gbox-content__form-sub-title-v2">${self.opts.formSubTitle2}</div>
 						<input type="hidden" name="Форма" value="Галлерея фото">
 						<input type="hidden" name="URL фотографии" value="${window.location.origin}${window.location.pathname}#${self.currentHash}"></input>
 						<div class="gbox-content__form-inputs">
