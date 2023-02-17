@@ -94,3 +94,13 @@ tabs:
       placeholder: "Заголовок"
       type: text
       tab: "yamobile.gallery::lang.models.fields.tab2"
+    description:
+      label: "yamobile.gallery::lang.models.fields.description"
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      placeholder: "Описание"
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
