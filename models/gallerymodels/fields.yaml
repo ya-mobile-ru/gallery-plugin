@@ -1,86 +1,106 @@
 fields:
-    folder_name:
-        label: 'yamobile.gallery::lang.models.fields.name'
-        span: auto
-        type: text
-    slug:
-        label: URL
-        span: auto
-        preset:
-            field: folder_name
-            type: slug
-        type: text
+  folder_name:
+    label: "yamobile.gallery::lang.models.fields.name"
+    span: auto
+    type: text
+  slug:
+    label: URL
+    span: auto
+    preset:
+      field: folder_name
+      type: slug
+    type: text
 tabs:
-    fields:
-        photos:
-            label: 'yamobile.gallery::lang.models.fields.files'
-            mode: image
-            imageWidth: '100'
-            imageHeight: '100'
-            useCaption: true
-            thumbOptions:
-                mode: crop
-                extension: auto
-            maxFilesize: '10'
-            span: full
-            type: fileupload
-            tab: 'yamobile.gallery::lang.models.fields.tab1'
-        hide:
-            label: 'yamobile.gallery::lang.models.fields.hide'
-            span: auto
-            type: switch
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
-        use_form_in_gallery:
-            label: 'yamobile.gallery::lang.models.fields.use_form'
-            span: auto
-            type: switch
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
-        sort_in_date:
-            label: 'yamobile.gallery::lang.models.fields.sort'
-            span: auto
-            type: switch
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
-        form_phone:
-            label: 'yamobile.gallery::lang.models.fields.phone'
-            span: auto
-            trigger:
-                action: show
-                field: use_form_in_gallery
-                condition: checked
-            type: switch
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
-        form_type:
-            label: 'yamobile.gallery::lang.models.fields.type'
-            options:
-                button: 'yamobile.gallery::lang.models.fields.types.button'
-                fixed: 'yamobile.gallery::lang.models.fields.types.fixed'
-                fixed-left: 'yamobile.gallery::lang.models.fields.types.f_left'
-                fixed-stick: 'yamobile.gallery::lang.models.fields.types.f_stick'
-            showSearch: true
-            span: auto
-            trigger:
-                action: show
-                field: use_form_in_gallery
-                condition: checked
-            type: dropdown
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
-        form_btn_send:
-            label: 'yamobile.gallery::lang.models.fields.btn_text'
-            span: auto
-            placeholder: 'Оставить заявку'
-            trigger:
-                action: show
-                field: use_form_in_gallery
-                condition: checked
-            type: text
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
-        form_btn:
-            label: 'yamobile.gallery::lang.models.fields.btn_form'
-            span: auto
-            placeholder: 'Заказать такой же проект'
-            trigger:
-                action: show
-                field: use_form_in_gallery
-                condition: checked
-            type: text
-            tab: 'yamobile.gallery::lang.models.fields.tab2'
+  fields:
+    photos:
+      label: "yamobile.gallery::lang.models.fields.files"
+      mode: image
+      imageWidth: "100"
+      imageHeight: "100"
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      maxFilesize: "10"
+      span: full
+      type: fileupload
+      tab: "yamobile.gallery::lang.models.fields.tab1"
+    hide:
+      label: "yamobile.gallery::lang.models.fields.hide"
+      span: auto
+      type: switch
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    use_form_in_gallery:
+      label: "yamobile.gallery::lang.models.fields.use_form"
+      span: auto
+      type: switch
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    sort_in_date:
+      label: "yamobile.gallery::lang.models.fields.sort"
+      span: auto
+      type: switch
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    form_phone:
+      label: "yamobile.gallery::lang.models.fields.phone"
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      type: switch
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    form_type:
+      label: "yamobile.gallery::lang.models.fields.type"
+      options:
+        button: "yamobile.gallery::lang.models.fields.types.button"
+        fixed: "yamobile.gallery::lang.models.fields.types.fixed"
+        fixed-left: "yamobile.gallery::lang.models.fields.types.f_left"
+        fixed-stick: "yamobile.gallery::lang.models.fields.types.f_stick"
+      showSearch: true
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      type: dropdown
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    form_btn_send:
+      label: "yamobile.gallery::lang.models.fields.btn_text"
+      span: auto
+      placeholder: "Оставить заявку"
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    form_btn:
+      label: "yamobile.gallery::lang.models.fields.btn_form"
+      span: auto
+      placeholder: "Заказать такой же проект"
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    heading:
+      label: "yamobile.gallery::lang.models.fields.heading"
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      placeholder: "Заголовок"
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
+    description:
+      label: "yamobile.gallery::lang.models.fields.description"
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      placeholder: "Описание"
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
