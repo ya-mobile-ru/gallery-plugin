@@ -84,3 +84,13 @@ tabs:
         condition: checked
       type: text
       tab: "yamobile.gallery::lang.models.fields.tab2"
+    heading:
+      label: "yamobile.gallery::lang.models.fields.heading"
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      placeholder: "Заголовок"
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
