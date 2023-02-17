@@ -5,7 +5,7 @@ namespace Yamobile\Gallery\Updates;
 use October\Rain\Database\Updates\Migration;
 use Schema;
 
-class AddFormTextToGallery extends Migration
+class AddHeadingToGallery extends Migration
 {
     public function up()
     {
