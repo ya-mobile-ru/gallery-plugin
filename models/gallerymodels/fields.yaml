@@ -105,7 +105,7 @@ tabs:
       type: text
       tab: "yamobile.gallery::lang.models.fields.tab2"
     phone:
-      label: "yamobile.gallery::lang.models.fields.phone"
+      label: "yamobile.gallery::lang.models.fields.phone_number"
       span: auto
       trigger:
         action: show
