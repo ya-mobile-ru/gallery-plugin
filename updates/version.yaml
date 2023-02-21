@@ -7,3 +7,6 @@
   - add_description_to_gallery.php
 1.1.1:
   - Fix form description text
+1.2.0:
+  - Add phone to the form
+  - add_phone_to_gallery.php
