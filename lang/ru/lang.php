@@ -37,6 +37,7 @@ return [
             'tab2' => 'Настройка галереи',
             'heading' => 'Заголовок формы',
             'description' => 'Описание формы',
+            'phone_number' => 'Телефон',
         ],
 
         'columns' => [

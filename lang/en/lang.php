@@ -37,6 +37,7 @@ return [
             'tab2' => 'Ggallery Settings',
             'heading' => 'Form heading',
             'description' => 'Form description',
+            'phone_number' => 'Phone',
         ],
 
         'columns' => [

@@ -104,3 +104,13 @@ tabs:
       placeholder: "Описание"
       type: text
       tab: "yamobile.gallery::lang.models.fields.tab2"
+    phone:
+      label: "yamobile.gallery::lang.models.fields.phone_number"
+      span: auto
+      trigger:
+        action: show
+        field: use_form_in_gallery
+        condition: checked
+      placeholder: "(000) 000-00-00"
+      type: text
+      tab: "yamobile.gallery::lang.models.fields.tab2"
