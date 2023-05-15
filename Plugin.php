@@ -32,10 +32,6 @@ class Plugin extends PluginBase {
             'label' => 'yamobile.gallery::lang.permissions.galleries',
             'tab' => 'Gallery',
             'order' => 200,
-            'roles' => [
-                'developer',
-                'publisher',
-            ],
         ],
     ];
    }
